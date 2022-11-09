@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form action="" method="get" onchange="Pass()">
+        <label for="">Password:(Min 6 characters)</label>
+        <input id="pswd1" style="margin-left: 58px;" placeholder="password" type="Password" value="">
+        <p id="message1" style="display: none;"></p>
+        <br><br>
+        <label for="">Repeat password:</label>
+        <input id="pswd2" onchange="cpass()" style="margin-left: 130px ;" placeholder="Confirm Password"
+            type="password">
+
+        <p id="message2" style="display: none;"></p>
+        <br>
+        <input style="display:none;" id="submit" type="submit" value="submit">
+    </form>
+    <script src="js.js"></script>
+</body>
+
+</html>

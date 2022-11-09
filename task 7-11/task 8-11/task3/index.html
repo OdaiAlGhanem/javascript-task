@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div id="div1">
+    <select name="fontf" id="fontf" onchange="fontfamily2()">
+        <option value="A">Arial</option>
+        <option value="TNR">Times New Roman</option>
+        <option value="LC">Lucida Console</option>
+        <option value="G">Garamond</option>
+    </select>
+    <select id="fonts" onchange="fontsize()">
+        <option value="15pt">15pt</option>
+        <option value="20pt">20pt</option>
+        <option value="25pt">25pt</option>
+        <option value="30pt">30pt</option>
+    </select>
+    <p style="display: inline;">Italic</p>
+    <input type="checkbox" id="I" name="Italic" value="fontitalic">
+    <p style="display: inline;">Bold</p>
+    <input type="checkbox" id="B" name="Bold" value="fontbold">
+    <p style="display: inline;">Underline</p>
+    <input type="checkbox" id="U" name="underline" value="textunderline">
+
+    </div>
+    <p id="p1" style="border: 1px solid black ; width: 500px; height: 200px;">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Facere ea hic dolorum sed enim, nam corrupti est quod obcaecati molestias ut,
+        reprehenderit rem! Et voluptate repudiandae nemo, ea aut odio.</p>
+</body>
+
+</html>
