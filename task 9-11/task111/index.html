@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="yourname">Your Name :</label>
+        <input onchange="myfun(this)" type="text" id="yourname">
+        <br>
+        <label for="yourage">Your Age :</label>
+        <input onchange="myfun(this)" type="text" id="yourage">
+        <br>
+        <label for="yourgender">Gender :</label>
+        <input type="radio" name="gender" onchange="radio1(this)" id="male">
+        <label for="malegender">Male</label>
+        <input type="radio" name="gender" onchange="radio1(this)" id="female">
+        <label for="femalegender">Female</label>
+        <br>
+        <label for="description">Brief Description :</label>
+        <textarea name="" onchange="myfun(this)" id="description" cols="30" rows="10"></textarea>
+        <br>
+        <label for="">Your univirsity :</label>
+        <input type="text" onchange="myfun(this)" id="univirsity">
+        <br>
+        <label>Programming Language :</label>
+        <input id="lang1" onchange="myfun(this)" name="lang1" type="checkbox" value="javascript">
+        <label for="lang1">Java Script</label>
+        <input id="lang2" onchange="myfun(this)" type="checkbox" name="lang2" value="c++">
+        <label for="lang2">c++</label>
+        <input id="lang3" onchange="myfun(this)" type="checkbox" name="lang3" value="java">
+        <label for="lang3">Java</label>
+        <br>
+    </form>
+    <button id="sub1" onclick="fun()">Submit</button>
+    <div id="div1">
+        <p id="p1">Your Name :</p>
+        <p id="p2">Your Age :</p>
+        <p id="p3">Your Gender :</p>
+        <p id="p4">Brief Description :</p>
+        <p id="p5">Programming Language :</p>
+    </div>
+    <script>
+        function myfun(a) {
+            localStorage.setItem(a.id, a.value);
+        }
+
+        function fun() {
+            document.getElementById("p1").innerHTML = 'Your Name :' + localStorage.getItem("yourname");
+            document.getElementById("p2").innerHTML = 'Your Age  :' + localStorage.getItem("yourage");
+            document.getElementById("p3").innerHTML = 'Your Gender :' + localStorage.getItem("gender");
+            document.getElementById("p4").innerHTML = 'Brief Description :' + localStorage.getItem("description");
+            document.getElementById("p5").innerHTML = 'Programming Language :' + localStorage.getItem("lang1") + '   /   ' + localStorage.getItem("lang2") + '  /' + localStorage.getItem("lang3");
+        }
+        function radio1(b) {
+            localStorage.setItem(b.name, b.id);
+        }
+        function check() {
+
+        }
+
+    </script>
+</body>
+
+</html>

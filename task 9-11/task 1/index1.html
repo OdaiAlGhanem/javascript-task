@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <label for="name"></label>Your Name</label>
+        <input id="name" style="margin-left: 288px; width:220px ;" placeholder="Enter Your Name :" type="text">
+        <br>
+        <label for="age">Your Age</label>
+        <input id="age" name="age" value="age" style="margin-left: 300px;  width:220px " placeholder="Enter Your Age :"
+            type="number">
+        <br>
+        <label>Gender</label>
+        <input id="male" name="gender" value="Male" style="margin-left: 330px;" type="radio">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="Female" value="Female" style="margin-left: 30px;">
+        <label for="female">Female</label>
+        <br>
+        <label for="desc">Brief Description</label>
+        <textarea style="margin-left:250px ;" placeholder="Description :" name="desc" id="desc" cols="40"
+            rows="5"></textarea>
+        <br>
+        <label for="uni">Your univirsity </label>
+        <input type="text" id="uni" style="margin-left: 265px; width:220px" name="uni "
+            placeholder="Your Univirsity"><br><br>
+        <br>
+        <label>Programming Language you prefer</label>
+        <input id="lang1" name="lang1" style="margin-left: 150px;" type="checkbox" value="javas">
+        <label for="lang1">Java Script</label>
+        <input id="lang2" type="checkbox" name="lang2" value="c++">
+        <label for="lang2">c++</label>
+        <input id="lang3" type="checkbox" name="lang3" value="java">
+        <label for="lang3">Java</label>
+        <br>
+
+    </form>
+    <button type="submit" id="sub" onclick="submit1()">Submit</button>
+    <br>
+    <div style=" background-color:rgb(161, 220, 220) ; width:400px ; height:300px ; border:2px solid black;" id="Div1">
+        <p id="p1">your name: </p>
+        <p id="p2">your age: </p>
+        <p id="p3">your gender: </p>
+        <p id="p4">brief Description: </p>
+        <p id="p5">Your major: </p>
+        <p>fav_language:
+        <ul style="list-style:none ;">
+            <li id="l1"></li>
+            <li id="l2"></li>
+            <li id="l3"></li>
+        </ul>
+        </p>
+    </div>
+
+    <script src="js1.js"></script>
+</body>
+
+</html>
